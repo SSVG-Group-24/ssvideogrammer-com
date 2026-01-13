@@ -1,0 +1,8 @@
+/** Tailwind like custom classes */
+.text-white {
+    color: #fff;
+}
+
+.bg-brand-174aa5 {
+    background: #174AA5 !important;
+}

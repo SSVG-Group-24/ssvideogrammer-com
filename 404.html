@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 Not Found</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --card: #0b1224;
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+        --accent: #38bdf8;
+        --accent-contrast: #061019;
+      }
+
+      html, body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        color: var(--text);
+        background: radial-gradient(1200px 600px at 10% 10%, #0b2550 0%, transparent 40%),
+                    radial-gradient(900px 500px at 90% 30%, #1e293b 0%, transparent 40%),
+                    var(--bg);
+        display: grid;
+        place-items: center;
+        min-height: 100svh;
+      }
+
+      .wrap {
+        width: min(92vw, 840px);
+        text-align: center;
+      }
+
+      .card {
+        background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 16px;
+        padding: clamp(1.25rem, 3vw + 0.5rem, 2.25rem);
+        box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6), inset 0 1px 0 rgba(255,255,255,0.05);
+        backdrop-filter: blur(2px);
+      }
+
+      h1 {
+        margin: 0 0 0.25rem;
+        font-size: clamp(3rem, 12vw, 7rem);
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        line-height: 1;
+        background: linear-gradient(90deg, #60a5fa, #22d3ee 50%, #38bdf8);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .subtitle {
+        margin: 0 0 1rem;
+        font-size: clamp(1rem, 2.4vw, 1.25rem);
+        color: var(--muted);
+      }
+
+      .desc {
+        margin: 0 auto 1.5rem;
+        max-width: 60ch;
+        color: #cbd5e1;
+        line-height: 1.6;
+        font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+      }
+
+      .actions {
+        display: flex;
+        gap: 0.75rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.7rem 1rem;
+        border-radius: 10px;
+        border: 1px solid rgba(148, 163, 184, 0.35);
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+        background: rgba(148, 163, 184, 0.08);
+      }
+
+      .btn:hover { transform: translateY(-1px); }
+
+      .btn.primary {
+        background: var(--accent);
+        color: var(--accent-contrast);
+        border-color: transparent;
+      }
+
+      .btn.primary:hover { filter: brightness(1.05); }
+
+      .hint {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .btn, .btn:hover { transition: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap" role="main">
+      <section class="card" aria-labelledby="nf-title">
+        <h1 id="nf-title">404</h1>
+        <p class="subtitle">Page not found</p>
+        <p class="desc">The page you’re looking for doesn’t exist or may have been moved. Check the URL or head back to a safe place.</p>
+        <div class="actions">
+          <a class="btn primary" href="/">Go to Homepage</a>
+          <a class="btn" href="/index.html">Try index.html</a>
+        </div>
+        <p class="hint">Error code: 404</p>
+      </section>
+    </main>
+  </body>
+</html>
