@@ -43,17 +43,83 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>SSVG</h1>
-        <p>
-            <font size="7">
-                <i>
-                    ssvideogrammer.com
-                </i>
-            </font>
-        </p>
-    </header>
-    <!-- insert content here -->
+    <h1>SSVG</h1>
+    <p>
+        <font size="7">
+            <i>
+               Let's make progress.
+            </i>
+        </font>
+    </p>
+    <!-- insert contents here -->
+    
+    <!-- about section -->
+    <section id="about">
+        <h3>About Us</h3>
+        <p>SSVG is a community for those who are passionate about programming, graphics, and videography.</p>
+    </section>
+    <!-- services section -->
+    <section id="services">
+        <h3>What Do We Do?</h3>
+        <ul>
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>Video Production</li>
+        </ul>
+    </section>
+    <!-- contact section -->
+    <section id="contact">
+        <h3>Contact Us</h3>
+        <p>contact [at] ssvideogrammer.com (replace the "at" with an @ sign)</p>
+        <form action="https://formspree.io/f/xvzzodzb" method="POST" class="my-8">
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full mb-6 md:mb-0 md:w-1/2 px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                        First Name
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" name="first_name" required/>
+                </div>
+                <div class="w-full mb-6 md:mb-0 md:w-1/2 px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                        Last Name
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-last-name" type="text" name="last_name" />
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
+                        Email
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="email" name="_replyto" required/>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-subject">
+                        Subject
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-subject" type="text" name="_subject" required/>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-message">
+                        Message
+                    </label>
+                    <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-message" name="message" required></textarea>
+                </div>
+            </div>
+            <div class="md:flex md:items-center">
+                <div class="md:w-full">
+                    <button class="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" type="submit">
+                        Send
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+    
     <!-- Footer -->
     <footer>
         <p>&copy; 2026 SSVG Group. All rights reserved.</p>
